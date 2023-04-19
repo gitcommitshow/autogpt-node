@@ -1,0 +1,33 @@
+{
+  "name": "autogpt-node",
+  "version": "1.0.0",
+  "description": "Node.js implementation for AutoGPT. AutoGPT as npm package. ",
+  "main": "./lib/autogpt.js",
+  "bin": {
+    "autogpt-node": "./bin/autogpt"
+  },
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "keywords": [
+    "AutoGPT",
+    "ChatGPT",
+    "agent",
+    "chain",
+    "LLM",
+    "agent",
+    "autonomous",
+    "gpt",
+    "gpt3.5",
+    "gpt4"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitcommitshow/autogpt-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gitcommitshow/autogpt-node/issues"
+  },
+  "author": "",
+  "license": "MIT"
+}
