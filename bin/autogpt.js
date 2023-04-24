@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 const { Command } = require('commander');
-const inquirer = require('inquirer');
+const { inquirer } = require('inquirer');
 const chalk = require('chalk');
-const autogpt = require('./index');
+const { AutoGPT } = require('./autogpt.js');
 
 const program = new Command();
 
@@ -14,7 +14,7 @@ program
   .parse(process.argv);
 
 // Create a new AutoGPT instance
-const seoGPT = new autogpt({
+const seoGPT = new AutoGPT({
   openAIKey: process.env.OPENAI_API_KEY,
   explain: true,
   continuous: program.continuous || false,

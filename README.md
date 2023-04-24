@@ -129,9 +129,9 @@ Document the API of your package here. ToDo.
 | Variable | Description |
 |----------|----------|
 | OPENAI_API_KEY | Your OpenAI platform API key |
+| ELEVELLABS_API_KEY| Your ElevenLabs API key for TTS |
 | IMAGE_PROVIDER| How do you want to create images e.g. DALLE, STABLE_DIFFUSION |
 | HUGGINGFACE_API_TOKEN | Your Hugging Face API token |
-||
 
 Make sure that `.env.sample` variables, whichever are relevant to you, are available in your environment
 
