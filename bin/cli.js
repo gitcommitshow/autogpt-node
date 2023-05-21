@@ -3,7 +3,7 @@
 const { Command } = require('commander');
 const { inquirer } = require('inquirer');
 const chalk = require('chalk');
-const { AutoGPT } = require('./autogpt.js');
+const AutoGPT = require('../lib/autogpt.js');
 
 const program = new Command();
 

@@ -1,10 +1,10 @@
 {
   "name": "autogpt-node",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Node.js implementation for AutoGPT. AutoGPT as npm package. ",
   "main": "./lib/autogpt.js",
   "bin": {
-    "autogpt-node": "./bin/autogpt"
+    "autogpt-node": "./bin/cli"
   },
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
