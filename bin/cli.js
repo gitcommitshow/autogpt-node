@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
 const { Command } = require('commander');
-const { inquirer } = require('inquirer');
+const inquirer = require('inquirer');
 const chalk = require('chalk');
 const AutoGPT = require('../lib/autogpt.js');
+
+
 
 const program = new Command();
 
@@ -38,6 +40,9 @@ async function askRoleAndGoals() {
     }
   ];
 
+  let name = (await inquirer.prompt(questions[0])).name || questions[0].default;
+  let role = (await inquirer.prompt(questions[1])).role || questions[1].default;
+
   const goals = [];
   let goalIndex = 1;
 
@@ -59,7 +64,8 @@ async function askRoleAndGoals() {
     }
   }
 
-  return { name: questions[0].default, role: questions[1].default, goals };
+  console.log(JSON.stringify({ name: name, role: role, goals }))
+  return { name: name, role: role, goals };
 }
 
 async function run() {
@@ -67,7 +73,7 @@ async function run() {
     console.log(chalk.blue('Welcome to AutoGPT CLI!'));
 
     const { name, role, goals } = await askRoleAndGoals();
-
+    
     seoGPT.setName(name);
     seoGPT.setRole(role);
 
