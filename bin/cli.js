@@ -41,6 +41,7 @@ async function askRoleAndGoals() {
   ];
 
   let name = (await inquirer.prompt(questions[0])).name || questions[0].default;
+  questions[1].message = `What is the role of the ${name}?`
   let role = (await inquirer.prompt(questions[1])).role || questions[1].default;
 
   const goals = [];
