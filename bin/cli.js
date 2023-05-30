@@ -6,7 +6,6 @@ const chalk = require('chalk');
 const AutoGPT = require('../lib/autogpt.js');
 
 
-
 const program = new Command();
 
 program
@@ -105,7 +104,7 @@ async function run() {
       console.log(results);
     });
 
-    seoGPT.start();
+    seoGPT.interact();
   } catch (error) {
     console.error(chalk.red(`An error occurred: ${error.message}`));
   }

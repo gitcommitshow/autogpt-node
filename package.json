@@ -1,6 +1,6 @@
 {
   "name": "autogpt-node",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Node.js implementation for AutoGPT. AutoGPT as npm package. ",
   "main": "./lib/autogpt.js",
   "bin": {
@@ -33,7 +33,9 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^10.0.1",
+    "gpt-3-encoder": "^1.1.4",
     "inquirer": "^8.2.5",
+    "jsonschema": "^1.4.1",
     "openai": "^3.2.1",
     "puppeteer": "^19.9.1"
   }
