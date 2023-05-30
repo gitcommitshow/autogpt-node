@@ -16,7 +16,7 @@ program
 
 // Create a new AutoGPT instance
 const seoGPT = new AutoGPT({
-  openAIKey: process.env.OPENAI_API_KEY,
+  openaiKey: process.env.OPENAI_API_KEY,
   explain: true,
   continuous: program.continuous || false,
   headless: program.headless === undefined ? true : program.headless,

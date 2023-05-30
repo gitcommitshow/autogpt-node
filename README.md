@@ -94,7 +94,7 @@ Make sure that you define [configurations](#configurations)
 const autogpt = require('autogpt-node');
 
 var seoGPT = new autogpt({ 
-    openAIKey: process.env.OPENAI_API_KEY, 
+    openaiKey: process.env.OPENAI_API_KEY, 
     explain: true, 
     continuous: true 
 });
