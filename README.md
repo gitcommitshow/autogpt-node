@@ -5,6 +5,8 @@ AutoGPT for `Node.js`
 [![npm version](https://img.shields.io/npm/v/autogpt-node.svg?style=flat)](https://www.npmjs.com/package/autogpt-node)
 <!-- [![npm downloads](https://img.shields.io/npm/dm/autogpt-node.svg?style=flat)](https://www.npmjs.com/package/autogpt-node) -->
 
+This project has been put on hold due to other priorities of the author. Create an issue if you want to take it up ahead.
+
 ## Description
 
 **Autonomous GPT as a Node.js library and CLI**
