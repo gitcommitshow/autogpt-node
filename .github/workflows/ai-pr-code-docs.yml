@@ -37,5 +37,5 @@ jobs:
         uses: knowl-doc/knowl-ai-code-docs@main 
         env:
           KNOWL_API_KEY: ${{secrets.KNOWL_API_KEY}} # get Knowl api key from your Knowl workspace
-          OPENAI_API_KEY: ${{vars.OPENAI_API_KEY}} # optional. action will use Knowl's OpenAI API Key by default
+          OPENAI_API_KEY: ${{secrets.OPENAI_API_KEY}} # optional. action will use Knowl's OpenAI API Key by default
           OPENAI_BATCH_SIZE: 40  
